@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coscup-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: coscup-app
+  template:
+    metadata:
+      labels:
+        app: coscup-app
+    spec:
+      containers:
+      - name: coscup-app
+        image: justin89271/2023-coscup-app:{{ .Values.app.image.tag }}
+        ports:
+        - containerPort: 8080
