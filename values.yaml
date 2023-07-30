@@ -1,5 +1,5 @@
 app:
   image:
-    tag: c02e67e42ab68a2e42cee871e5c5a49e9be371d5
+    tag: a49af0d8a298720602e62d7bd28db6b2253b0e09
   url:
     host: uccu.coscup
